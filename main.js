@@ -80,6 +80,7 @@ printButton.addEventListener( 'click', function( e ) {
   mywindow.document.write('</head><body>');
   mywindow.document.write('<h1>Entrecote</h1>');
   mywindow.document.write(document.getElementById('bill').innerHTML);
+  mywindow.document.write('<p>Gracias por su compra</p>');
   mywindow.document.write('</body></html>');
 
   mywindow.document.close();
