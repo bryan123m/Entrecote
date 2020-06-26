@@ -1,0 +1,58 @@
+body {
+  font-size: 16px;
+}
+
+section.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section.products > div {
+  background-color: #cccccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  flex: 0 0 20%;
+  text-align: center;
+  cursor: pointer;
+}
+
+section.products > div > img {
+  max-height: 5rem;
+  max-width: 5rem;
+}
+
+form {
+  background-color: #cccccc;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  width: 19rem;
+  height: 16rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.field {
+  padding: 0.5rem 4rem;
+  margin: 1rem 0;
+}
+
+button {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 5rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin: 1rem  0  0 37rem
+}
+
+button:hover {
+  color: #1883ba;
+  background-color: #cccccc;
+}
+
+p {
+  text-align: center;
+}
