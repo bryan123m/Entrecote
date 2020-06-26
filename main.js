@@ -56,8 +56,8 @@ totalButton.addEventListener( 'click', function( e ) {
   let total = 0;
 
   appendToBill( 'p', 'Nombre: ' + document.querySelector('#name').value );
-  appendToBill( 'p', document.querySelector('#surname').value );
-  appendToBill( 'p', document.querySelector('#phone').value );
+  appendToBill( 'p', 'Telefono: ' +document.querySelector('#phone').value );
+  appendToBill( 'p', 'Dirección: ' + document.querySelector('#surname').value );
   appendToBill( 'p', 'Descripción de la Compra' );
 
   bill.forEach( e => {
