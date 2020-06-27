@@ -25,6 +25,26 @@
           <label for="surname">Dirección</label>
           <input class="field" type="text" name="surname" id="surname">
         </div>
+        <div>
+          <label for="lugar">Lugar de Referencia</label>
+          <input class="field" type="text" name="lugar" id="lugar">
+        </div>
+        <div>
+          <label for="pedido">Hora del Pedido</label>
+          <input class="field" type="text" name="pedido" id="pedido">
+        </div>
+        <div>
+          <label>Lugar de domicilio:</label>
+							<select class="form-control" name="tipo" id="tipo">
+								<option>Selecciona el lugar del domicilio</option>
+								<option id="bello">Bello</option>  
+                <option id="envigado">Envigado</option>
+                <option id="llano">Llano Grande</option>
+                <option id="palmas">Palmas</option>  
+                <option id="poblado">Poblado</option>
+                <option id="sabaneta">Sabaneta</option>
+              </select>
+        </div>
       </form>
     </section>
     <section class="total">
@@ -33,5 +53,36 @@
       <button class="print">Imprimir</button>
     </section>
     <script src="./main.js"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCyT7eZ_1WQq5YY6k92_nVcyWkrWF_PVng",
+    authDomain: "entrecote-cb2d5.firebaseapp.com",
+    databaseURL: "https://entrecote-cb2d5.firebaseio.com",
+    projectId: "entrecote-cb2d5",
+    storageBucket: "entrecote-cb2d5.appspot.com",
+    messagingSenderId: "183705135579",
+    appId: "1:183705135579:web:b3f37a0c1efd43e8bcdffe",
+    measurementId: "G-SR0ZE8ZJBS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  var storageRef = firebase.storage().Ref('facturas/' + file.name);
+
+  var task = storageRef.put(file);
+
+
+  
+</script>
   </body>
 </html>

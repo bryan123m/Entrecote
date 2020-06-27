@@ -33,13 +33,18 @@ form {
   margin: 0 auto;
   font-size: 1.3rem;
   width: 19rem;
-  height: 16rem;
+  height: 33rem;
   padding: 1.5rem;
   border-radius: 1rem;
 }
 
 .field {
   padding: 0.5rem 4rem;
+  margin: 1rem 0;
+}
+
+#tipo{
+  padding: 0.5rem 2.9rem;
   margin: 1rem 0;
 }
 

@@ -2,7 +2,7 @@ let products = [
   { name: 'Entrecôte con salsa', image: './1147801.svg', value: 45000 },
   { name: 'salsa entrecôte grande', image: './1147801.svg', value: 46000 },
   { name: 'salsa entrecôte pequeña', image: './1147801.svg', value: 26000 },
-  { name: 'Papas a la francesa', image: './1147801.svg', value: 10000 },
+  { name: 'Papas a la francesa', image: './1147801.svg', value: 3300 },
   { name: 'Ensalda con Almendras y Vinagreta de Balsámico y Tamarindo', image: './1147801.svg', value: 10000 },
   { name: 'Vinagreta Balsámico y Tamarindo', image: './1147801.svg', value: 22000 },
   { name: 'Vinagreta Mostaza y Lavanda', image: './1147801.svg', value: 22000 },
@@ -12,7 +12,7 @@ let products = [
   { name: 'Samovar', image: './1147801.svg', value: 20000 },
   { name: 'Experiencia Completa', image: './1147801.svg', value: 58000 },
   { name: 'Experiencia Mini', image: './1147801.svg', value: 45000 },
-  { name: 'Vino', image: './1147801.svg', value: 10000 },
+  
 ];
 let bill = [];
 let billContainer = document.querySelector('section.total > .bill');
@@ -58,6 +58,8 @@ totalButton.addEventListener( 'click', function( e ) {
   appendToBill( 'p', 'Nombre: ' + document.querySelector('#name').value );
   appendToBill( 'p', 'Telefono: ' +document.querySelector('#phone').value );
   appendToBill( 'p', 'Dirección: ' + document.querySelector('#surname').value );
+  appendToBill( 'p', 'Lugar de refencia: ' + document.querySelector('#lugar').value );
+  appendToBill( 'p', 'Hora del pedido: ' + document.querySelector('#pedido').value );
   appendToBill( 'p', 'Descripción de la Compra' );
 
   bill.forEach( e => {
